@@ -8,7 +8,7 @@
       <rect x="42" y="38" width="11" height="24" fill="#75f4c5"><animate attributeName="x" values="42;52.5;63.0;73.5;84.0;94.5;105.0;115.5;126.0;136.5;147.0;157.5;168.0;178.5;189.0;199.5;210.0;220.5;231.0;241.5;252.0;262.5;273.0;283.5;294.0;304.5;315.0;325.5;336.0;346.5;357.0;367.5;378.0;388.5;399.0;409.5;420.0;430.5;441.0;451.5;462.0;472.5;472.5;42" keyTimes="0;0.0756;0.0900;0.1044;0.1189;0.1333;0.1478;0.1622;0.1767;0.1911;0.2056;0.2200;0.2344;0.2489;0.2633;0.2778;0.2922;0.3067;0.3211;0.3356;0.3500;0.3644;0.3789;0.3933;0.4078;0.4222;0.4367;0.4511;0.4656;0.4800;0.4944;0.5089;0.5233;0.5378;0.5522;0.5667;0.5811;0.5956;0.6100;0.6244;0.6389;0.6533;.92;1" calcMode="discrete" dur="9s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;1;0;1;0" keyTimes="0;.90;.93;.96;1" dur="9s" repeatCount="indefinite"/></rect>
       <text x="42" y="92" fill="#ffcf72" opacity=".78">SYSTEM STATUS: ONLINE<animate attributeName="opacity" values=".78;.78;1;.78" keyTimes="0;.90;.94;1" dur="9s" repeatCount="indefinite"/></text>
     </g>
-    <g display="none">
+    <g>
       <text x="42" y="54" fill="#dffff3" font-family="monospace" font-size="18">audra@command-center:~$ continue_building</text>
       <text x="42" y="92" fill="#ffcf72">SYSTEM STATUS: ONLINE</text><rect x="468" y="38" width="12" height="24" fill="#75f4c5"/>
     </g>
