@@ -1,1 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 210" role="img" aria-labelledby="title"><title id="title">AUDRA system telemetry</title><rect width="1000" height="210" rx="18" fill="#081513"/><text x="38" y="38" fill="#7fffd0" font-family="monospace" font-size="19">SYSTEM TELEMETRY / LIVE DESIGN STATE</text><g font-family="monospace" font-size="16"><g fill="#dffef3"><text x="44" y="82">RESEARCH</text><text x="44" y="122">BUILD MODE</text><text x="44" y="162">PRIVATE SYSTEMS</text></g><g fill="#12382f" stroke="#3cd8a2"><rect x="220" y="64" width="560" height="20" rx="5"/><rect x="220" y="104" width="560" height="20" rx="5"/><rect x="220" y="144" width="560" height="20" rx="5"/></g><g fill="#6fffd0"><rect x="220" y="64" width="500" height="20" rx="5"><animate attributeName="opacity" values=".82;1;.82" dur="3.6s" repeatCount="indefinite"/></rect><rect x="220" y="104" width="440" height="20" rx="5"><animate attributeName="opacity" values=".82;1;.82" dur="3.6s" begin=".6s" repeatCount="indefinite"/></rect><rect x="220" y="144" width="530" height="20" rx="5"><animate attributeName="opacity" values=".82;1;.82" dur="3.6s" begin="1.2s" repeatCount="indefinite"/></rect></g><g fill="#ffcf72"><text x="808" y="81">ACTIVE</text><text x="808" y="121">CONTINUOUS</text><text x="808" y="161">ONLINE</text></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 210" role="img" aria-labelledby="title desc">
+  <title id="title">AUDRA system telemetry</title>
+  <desc id="desc">Subtle independent live-design meters for research, build mode, and private systems.</desc>
+  <defs>
+    <linearGradient id="meterGlow" x1="0" x2="1"><stop stop-color="#dffff3" stop-opacity=".05"/><stop offset=".5" stop-color="#dffff3" stop-opacity=".55"/><stop offset="1" stop-color="#dffff3" stop-opacity=".05"/></linearGradient>
+    <clipPath id="meterClip"><rect x="220" y="64" width="560" height="20" rx="5"/><rect x="220" y="104" width="560" height="20" rx="5"/><rect x="220" y="144" width="560" height="20" rx="5"/></clipPath>
+  </defs>
+  <rect width="1000" height="210" rx="18" fill="#081513" stroke="#245b4b"/>
+  <g font-family="monospace" font-size="16">
+    <text x="38" y="38" fill="#7fffd0" font-size="19">SYSTEM TELEMETRY / LIVE DESIGN STATE</text>
+    <g fill="#dffef3"><text x="44" y="82">RESEARCH</text><text x="44" y="122">BUILD MODE</text><text x="44" y="162">PRIVATE SYSTEMS</text></g>
+    <g fill="#12382f" stroke="#3cd8a2"><rect x="220" y="64" width="560" height="20" rx="5"/><rect x="220" y="104" width="560" height="20" rx="5"/><rect x="220" y="144" width="560" height="20" rx="5"/></g>
+    <g fill="#6fffd0">
+      <rect x="220" y="64" width="500" height="20" rx="5"><animate attributeName="width" values="500;512;500;488;500" keyTimes="0;.25;.5;.75;1" dur="5.4s" repeatCount="indefinite"/><animate attributeName="opacity" values=".82;1;.86;.96;.82" keyTimes="0;.25;.5;.75;1" dur="5.4s" repeatCount="indefinite"/></rect>
+      <rect x="220" y="104" width="440" height="20" rx="5"><animate attributeName="width" values="440;450;440;430;440" keyTimes="0;.25;.5;.75;1" dur="5.9s" begin=".45s" repeatCount="indefinite"/><animate attributeName="opacity" values=".82;.96;.84;1;.82" keyTimes="0;.25;.5;.75;1" dur="5.9s" begin=".45s" repeatCount="indefinite"/></rect>
+      <rect x="220" y="144" width="530" height="20" rx="5"><animate attributeName="width" values="530;538;530;522;530" keyTimes="0;.25;.5;.75;1" dur="6.3s" begin=".9s" repeatCount="indefinite"/><animate attributeName="opacity" values=".84;1;.88;.96;.84" keyTimes="0;.25;.5;.75;1" dur="6.3s" begin=".9s" repeatCount="indefinite"/></rect>
+    </g>
+    <g clip-path="url(#meterClip)" opacity=".22" fill="url(#meterGlow)">
+      <rect x="220" y="64" width="120" height="20"><animate attributeName="x" values="120;780" dur="4.8s" repeatCount="indefinite"/></rect>
+      <rect x="220" y="104" width="120" height="20"><animate attributeName="x" values="80;780" dur="5.4s" begin=".35s" repeatCount="indefinite"/></rect>
+      <rect x="220" y="144" width="120" height="20"><animate attributeName="x" values="160;780" dur="6.0s" begin=".7s" repeatCount="indefinite"/></rect>
+    </g>
+    <g fill="#ffcf72"><text x="808" y="81">ACTIVE</text><text x="808" y="121">CONTINUOUS</text><text x="808" y="161">ONLINE</text></g>
+  </g>
+</svg>
